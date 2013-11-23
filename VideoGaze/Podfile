@@ -1,0 +1,14 @@
+xcodeproj 'VideoGaze'
+
+platform :ios, "6.0"
+
+pod 'Reachability', :head
+pod 'BlocksKit', '~> 1.8.3'
+pod 'ReactiveCocoa', '~> 2.1.3'
+pod 'SSToolkit', '~> 1.0.4'
+pod 'ConventionalC', '~> 0.10'
+
+target :test, :exclusive => true do
+  link_with 'VideoGazeTests'
+  pod 'Kiwi'
+end

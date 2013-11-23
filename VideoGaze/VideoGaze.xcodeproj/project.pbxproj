@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04C262CC94F2411785520EDB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3A6F437473438F876D9C19 /* libPods.a */; };
+		1F1ECD62184111280056CE5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1ECD61184111280056CE5C /* Foundation.framework */; };
+		1F1ECD64184111280056CE5C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1ECD63184111280056CE5C /* CoreGraphics.framework */; };
+		1F1ECD66184111280056CE5C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1ECD65184111280056CE5C /* UIKit.framework */; };
+		1F1ECD6C184111280056CE5C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F1ECD6A184111280056CE5C /* InfoPlist.strings */; };
+		1F1ECD6E184111280056CE5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1ECD6D184111280056CE5C /* main.m */; };
+		1F1ECD72184111280056CE5C /* JPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1ECD71184111280056CE5C /* JPAppDelegate.m */; };
+		1F1ECD74184111280056CE5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F1ECD73184111280056CE5C /* Images.xcassets */; };
+		1F1ECD7B184111280056CE5C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1ECD7A184111280056CE5C /* XCTest.framework */; };
+		1F1ECD7C184111280056CE5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1ECD61184111280056CE5C /* Foundation.framework */; };
+		1F1ECD7D184111280056CE5C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1ECD65184111280056CE5C /* UIKit.framework */; };
+		1F1ECD85184111280056CE5C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F1ECD83184111280056CE5C /* InfoPlist.strings */; };
+		1F1ECD87184111280056CE5C /* VideoGazeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1ECD86184111280056CE5C /* VideoGazeTests.m */; };
+		3E890DFDC3424167A8452DEE /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3C3DE02BCE406B9E77533C /* libPods-test.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F1ECD7E184111280056CE5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F1ECD56184111280056CE5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F1ECD5D184111280056CE5C;
+			remoteInfo = VideoGaze;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F1ECD5E184111280056CE5C /* VideoGaze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoGaze.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F1ECD61184111280056CE5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1F1ECD63184111280056CE5C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1F1ECD65184111280056CE5C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1F1ECD69184111280056CE5C /* VideoGaze-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VideoGaze-Info.plist"; sourceTree = "<group>"; };
+		1F1ECD6B184111280056CE5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1F1ECD6D184111280056CE5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F1ECD6F184111280056CE5C /* VideoGaze-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VideoGaze-Prefix.pch"; sourceTree = "<group>"; };
+		1F1ECD70184111280056CE5C /* JPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPAppDelegate.h; sourceTree = "<group>"; };
+		1F1ECD71184111280056CE5C /* JPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPAppDelegate.m; sourceTree = "<group>"; };
+		1F1ECD73184111280056CE5C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1F1ECD79184111280056CE5C /* VideoGazeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoGazeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F1ECD7A184111280056CE5C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1F1ECD82184111280056CE5C /* VideoGazeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VideoGazeTests-Info.plist"; sourceTree = "<group>"; };
+		1F1ECD84184111280056CE5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1F1ECD86184111280056CE5C /* VideoGazeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoGazeTests.m; sourceTree = "<group>"; };
+		3C3C3DE02BCE406B9E77533C /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10FB595BB8943B28023B4A4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		CDF02EF696D340C5B1690DE6 /* Pods-test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.xcconfig"; path = "Pods/Pods-test.xcconfig"; sourceTree = "<group>"; };
+		FB3A6F437473438F876D9C19 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F1ECD5B184111280056CE5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F1ECD64184111280056CE5C /* CoreGraphics.framework in Frameworks */,
+				1F1ECD66184111280056CE5C /* UIKit.framework in Frameworks */,
+				1F1ECD62184111280056CE5C /* Foundation.framework in Frameworks */,
+				04C262CC94F2411785520EDB /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F1ECD76184111280056CE5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F1ECD7B184111280056CE5C /* XCTest.framework in Frameworks */,
+				1F1ECD7D184111280056CE5C /* UIKit.framework in Frameworks */,
+				1F1ECD7C184111280056CE5C /* Foundation.framework in Frameworks */,
+				3E890DFDC3424167A8452DEE /* libPods-test.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F1ECD55184111280056CE5C = {
+			isa = PBXGroup;
+			children = (
+				1F1ECD67184111280056CE5C /* VideoGaze */,
+				1F1ECD80184111280056CE5C /* VideoGazeTests */,
+				1F1ECD60184111280056CE5C /* Frameworks */,
+				1F1ECD5F184111280056CE5C /* Products */,
+				A10FB595BB8943B28023B4A4 /* Pods.xcconfig */,
+				CDF02EF696D340C5B1690DE6 /* Pods-test.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		1F1ECD5F184111280056CE5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F1ECD5E184111280056CE5C /* VideoGaze.app */,
+				1F1ECD79184111280056CE5C /* VideoGazeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F1ECD60184111280056CE5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F1ECD61184111280056CE5C /* Foundation.framework */,
+				1F1ECD63184111280056CE5C /* CoreGraphics.framework */,
+				1F1ECD65184111280056CE5C /* UIKit.framework */,
+				1F1ECD7A184111280056CE5C /* XCTest.framework */,
+				FB3A6F437473438F876D9C19 /* libPods.a */,
+				3C3C3DE02BCE406B9E77533C /* libPods-test.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F1ECD67184111280056CE5C /* VideoGaze */ = {
+			isa = PBXGroup;
+			children = (
+				1F1ECD70184111280056CE5C /* JPAppDelegate.h */,
+				1F1ECD71184111280056CE5C /* JPAppDelegate.m */,
+				1F1ECD73184111280056CE5C /* Images.xcassets */,
+				1F1ECD68184111280056CE5C /* Supporting Files */,
+			);
+			path = VideoGaze;
+			sourceTree = "<group>";
+		};
+		1F1ECD68184111280056CE5C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F1ECD69184111280056CE5C /* VideoGaze-Info.plist */,
+				1F1ECD6A184111280056CE5C /* InfoPlist.strings */,
+				1F1ECD6D184111280056CE5C /* main.m */,
+				1F1ECD6F184111280056CE5C /* VideoGaze-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F1ECD80184111280056CE5C /* VideoGazeTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F1ECD86184111280056CE5C /* VideoGazeTests.m */,
+				1F1ECD81184111280056CE5C /* Supporting Files */,
+			);
+			path = VideoGazeTests;
+			sourceTree = "<group>";
+		};
+		1F1ECD81184111280056CE5C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F1ECD82184111280056CE5C /* VideoGazeTests-Info.plist */,
+				1F1ECD83184111280056CE5C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F1ECD5D184111280056CE5C /* VideoGaze */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F1ECD8A184111280056CE5C /* Build configuration list for PBXNativeTarget "VideoGaze" */;
+			buildPhases = (
+				767E7748BD61424CB9143D94 /* Check Pods Manifest.lock */,
+				1F1ECD5A184111280056CE5C /* Sources */,
+				1F1ECD5B184111280056CE5C /* Frameworks */,
+				1F1ECD5C184111280056CE5C /* Resources */,
+				8EF3968AF74F4A02B61FB891 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoGaze;
+			productName = VideoGaze;
+			productReference = 1F1ECD5E184111280056CE5C /* VideoGaze.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F1ECD78184111280056CE5C /* VideoGazeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F1ECD8D184111280056CE5C /* Build configuration list for PBXNativeTarget "VideoGazeTests" */;
+			buildPhases = (
+				3844B9CD00F54F119C67260F /* Check Pods Manifest.lock */,
+				1F1ECD75184111280056CE5C /* Sources */,
+				1F1ECD76184111280056CE5C /* Frameworks */,
+				1F1ECD77184111280056CE5C /* Resources */,
+				895BBA029D354518824E71D9 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F1ECD7F184111280056CE5C /* PBXTargetDependency */,
+			);
+			name = VideoGazeTests;
+			productName = VideoGazeTests;
+			productReference = 1F1ECD79184111280056CE5C /* VideoGazeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F1ECD56184111280056CE5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JP;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Joerg Polakowski";
+				TargetAttributes = {
+					1F1ECD78184111280056CE5C = {
+						TestTargetID = 1F1ECD5D184111280056CE5C /* VideoGaze */;
+					};
+				};
+			};
+			buildConfigurationList = 1F1ECD59184111280056CE5C /* Build configuration list for PBXProject "VideoGaze" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1F1ECD55184111280056CE5C;
+			productRefGroup = 1F1ECD5F184111280056CE5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F1ECD5D184111280056CE5C /* VideoGaze */,
+				1F1ECD78184111280056CE5C /* VideoGazeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F1ECD5C184111280056CE5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F1ECD6C184111280056CE5C /* InfoPlist.strings in Resources */,
+				1F1ECD74184111280056CE5C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F1ECD77184111280056CE5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F1ECD85184111280056CE5C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3844B9CD00F54F119C67260F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		767E7748BD61424CB9143D94 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		895BBA029D354518824E71D9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EF3968AF74F4A02B61FB891 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F1ECD5A184111280056CE5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F1ECD72184111280056CE5C /* JPAppDelegate.m in Sources */,
+				1F1ECD6E184111280056CE5C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F1ECD75184111280056CE5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F1ECD87184111280056CE5C /* VideoGazeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F1ECD7F184111280056CE5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F1ECD5D184111280056CE5C /* VideoGaze */;
+			targetProxy = 1F1ECD7E184111280056CE5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F1ECD6A184111280056CE5C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F1ECD6B184111280056CE5C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1F1ECD83184111280056CE5C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F1ECD84184111280056CE5C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F1ECD88184111280056CE5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1F1ECD89184111280056CE5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F1ECD8B184111280056CE5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A10FB595BB8943B28023B4A4 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VideoGaze/VideoGaze-Prefix.pch";
+				INFOPLIST_FILE = "VideoGaze/VideoGaze-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1F1ECD8C184111280056CE5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A10FB595BB8943B28023B4A4 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VideoGaze/VideoGaze-Prefix.pch";
+				INFOPLIST_FILE = "VideoGaze/VideoGaze-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1F1ECD8E184111280056CE5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDF02EF696D340C5B1690DE6 /* Pods-test.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VideoGaze.app/VideoGaze";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VideoGaze/VideoGaze-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VideoGazeTests/VideoGazeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1F1ECD8F184111280056CE5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDF02EF696D340C5B1690DE6 /* Pods-test.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VideoGaze.app/VideoGaze";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VideoGaze/VideoGaze-Prefix.pch";
+				INFOPLIST_FILE = "VideoGazeTests/VideoGazeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F1ECD59184111280056CE5C /* Build configuration list for PBXProject "VideoGaze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F1ECD88184111280056CE5C /* Debug */,
+				1F1ECD89184111280056CE5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F1ECD8A184111280056CE5C /* Build configuration list for PBXNativeTarget "VideoGaze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F1ECD8B184111280056CE5C /* Debug */,
+				1F1ECD8C184111280056CE5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F1ECD8D184111280056CE5C /* Build configuration list for PBXNativeTarget "VideoGazeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F1ECD8E184111280056CE5C /* Debug */,
+				1F1ECD8F184111280056CE5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F1ECD56184111280056CE5C /* Project object */;
+}
