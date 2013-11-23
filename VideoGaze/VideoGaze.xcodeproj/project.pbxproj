@@ -123,6 +123,8 @@
 				1F1ECD71184111280056CE5C /* JPAppDelegate.m */,
 				1F1ECD73184111280056CE5C /* Images.xcassets */,
 				1F1ECD68184111280056CE5C /* Supporting Files */,
+				AF3EA3D068B32FC9660E243C /* Classes */,
+				AF3EA5AD9F382D868C385A5B /* Resources */,
 			);
 			path = VideoGaze;
 			sourceTree = "<group>";
@@ -154,6 +156,68 @@
 				1F1ECD83184111280056CE5C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF3EA05C51AF5E3A7D42CB5E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AF3EA098E7697E853457C210 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AF3EA236249315967B125766 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AF3EA3D068B32FC9660E243C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AF3EA236249315967B125766 /* Model */,
+				AF3EAA5D4577504BDDA9CB7A /* Application */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		AF3EA5AD9F382D868C385A5B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AF3EA83B1BEE4A4A8D55D1F2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AF3EAA5D4577504BDDA9CB7A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				AF3EAFE8416014797D5C510B /* Logic */,
+				AF3EA098E7697E853457C210 /* Views */,
+				AF3EA83B1BEE4A4A8D55D1F2 /* Common */,
+				AF3EA05C51AF5E3A7D42CB5E /* ViewControllers */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		AF3EAFE8416014797D5C510B /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Logic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

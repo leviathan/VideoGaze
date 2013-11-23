@@ -6,8 +6,6 @@
 //  Copyright (c) 2013 Joerg Polakowski. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 @interface JPAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
