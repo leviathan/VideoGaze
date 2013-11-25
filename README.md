@@ -9,10 +9,14 @@ The focus is on displaying the video feed in the smoothest and most convenient w
 
 Clone the project including submodules:
 
-	$ git clone --recursive xxx
+	$ git clone --recursive https://github.com/leviathan/VideoGaze.git
+
   $ gem install cocoapods
+
 	$ cd VideoGaze
+
   $ pod setup (only needed when cocoapods aren't setup yet)
+
   $ pod install
 
 Build and run the VideoGaze.xcworkspace project using XCode.
