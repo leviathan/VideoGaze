@@ -2,8 +2,9 @@ VideoGaze
 ====================
 
 This application fetches a video feed list from the vimeo API and displays the videos in a scrolling list.
-
 The focus is on displaying the video feed in the smoothest and most convenient way to the user.
+
+![alt tag](https://raw.github.com/leviathan/VideoGaze/master/Video_Gaze.png)
 
 ### Project Setup
 
