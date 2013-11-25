@@ -35,5 +35,8 @@ However, using the FastImageCache might be useful, when the images sizes returne
 
 https://github.com/path/FastImageCache
 
+### License
+
+Videogaze is licensed under the MIT License.
 
 
