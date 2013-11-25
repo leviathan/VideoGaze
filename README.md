@@ -2,22 +2,19 @@ VideoGaze
 ====================
 
 This application fetches a video feed list from the vimeo API and displays the videos in a scrolling list.
-
 The focus is on displaying the video feed in the smoothest and most convenient way to the user.
+
+![alt tag](https://raw.github.com/leviathan/VideoGaze/master/Video_Gaze.png)
 
 ### Project Setup
 
 Clone the project including submodules:
 
-	$ git clone --recursive https://github.com/leviathan/VideoGaze.git
-
-  $ gem install cocoapods
-
-	$ cd VideoGaze
-
-  $ pod setup (only needed when cocoapods aren't setup yet)
-
-  $ pod install
+    $ git clone --recursive https://github.com/leviathan/VideoGaze.git
+    $ gem install cocoapods
+    $ cd VideoGaze
+    $ pod setup (only needed when cocoapods aren't setup yet)
+    $ pod install
 
 Build and run the VideoGaze.xcworkspace project using XCode.
 
@@ -41,5 +38,7 @@ However, using the FastImageCache might be useful, when the images sizes returne
 
 https://github.com/path/FastImageCache
 
+### License
 
+Videogaze is licensed under the MIT License.
 
