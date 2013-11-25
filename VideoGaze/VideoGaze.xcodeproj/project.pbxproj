@@ -20,7 +20,16 @@
 		1F1ECD7D184111280056CE5C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1ECD65184111280056CE5C /* UIKit.framework */; };
 		1F1ECD85184111280056CE5C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F1ECD83184111280056CE5C /* InfoPlist.strings */; };
 		1F1ECD87184111280056CE5C /* VideoGazeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1ECD86184111280056CE5C /* VideoGazeTests.m */; };
+		1F9432E11843460600943DE3 /* JPVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9432E01843460600943DE3 /* JPVideoCell.m */; };
+		1F979E1A1842728D00E8B4F8 /* JPAlbumTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F979E191842728D00E8B4F8 /* JPAlbumTableViewController.m */; };
+		1F979E1F1842781300E8B4F8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F979E211842781300E8B4F8 /* Localizable.strings */; };
 		3E890DFDC3424167A8452DEE /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3C3DE02BCE406B9E77533C /* libPods-test.a */; };
+		AF3EA2407DD03E0F3B4335F9 /* JPVimeoEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3EA9015400FA7411B28835 /* JPVimeoEngine.m */; };
+		AF3EA2D9F0EC84C5EC0AAD30 /* JPVimeoVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3EA8947FE2355DA6E9E576 /* JPVimeoVideo.m */; };
+		AF3EA2FE3F5D2783DB79BB25 /* NSObject+SafeConcurrency.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3EAFF6C1E06E052A3136F8 /* NSObject+SafeConcurrency.m */; };
+		AF3EA764F9B364EA4E9CBE90 /* MKNetworkEngine+EngineAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3EA7E9CF70917CDF8A40FA /* MKNetworkEngine+EngineAdditions.m */; };
+		AF3EA9273CE83025ACF95F64 /* NSObject+ModelAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3EA6F38646CCCDDEE74B81 /* NSObject+ModelAdditions.m */; };
+		AF3EAAE8B4810A663F950D08 /* JPAppEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3EA9D7599C7117D1D5F55E /* JPAppEnvironment.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +59,28 @@
 		1F1ECD82184111280056CE5C /* VideoGazeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VideoGazeTests-Info.plist"; sourceTree = "<group>"; };
 		1F1ECD84184111280056CE5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F1ECD86184111280056CE5C /* VideoGazeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoGazeTests.m; sourceTree = "<group>"; };
+		1F9432DF1843460600943DE3 /* JPVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoCell.h; sourceTree = "<group>"; };
+		1F9432E01843460600943DE3 /* JPVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoCell.m; sourceTree = "<group>"; };
+		1F979E181842728D00E8B4F8 /* JPAlbumTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPAlbumTableViewController.h; sourceTree = "<group>"; };
+		1F979E191842728D00E8B4F8 /* JPAlbumTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPAlbumTableViewController.m; sourceTree = "<group>"; };
+		1F979E1B1842773000E8B4F8 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1F979E1C1842773000E8B4F8 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1F979E201842781300E8B4F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1F979E221842781E00E8B4F8 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3C3C3DE02BCE406B9E77533C /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10FB595BB8943B28023B4A4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		AF3EA0F2A3813A93576B597D /* JPAppEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPAppEnvironment.h; sourceTree = "<group>"; };
+		AF3EA29663EB1B408794973B /* MKNetworkEngine+EngineAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKNetworkEngine+EngineAdditions.h"; sourceTree = "<group>"; };
+		AF3EA3D8BA25FEFE15757EB3 /* NSObject+SafeConcurrency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SafeConcurrency.h"; sourceTree = "<group>"; };
+		AF3EA5F1BC282FE5A1382575 /* JPVimeoVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVimeoVideo.h; sourceTree = "<group>"; };
+		AF3EA6F38646CCCDDEE74B81 /* NSObject+ModelAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ModelAdditions.m"; sourceTree = "<group>"; };
+		AF3EA7E9CF70917CDF8A40FA /* MKNetworkEngine+EngineAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKNetworkEngine+EngineAdditions.m"; sourceTree = "<group>"; };
+		AF3EA8947FE2355DA6E9E576 /* JPVimeoVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVimeoVideo.m; sourceTree = "<group>"; };
+		AF3EA9015400FA7411B28835 /* JPVimeoEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVimeoEngine.m; sourceTree = "<group>"; };
+		AF3EA9D7599C7117D1D5F55E /* JPAppEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPAppEnvironment.m; sourceTree = "<group>"; };
+		AF3EAB29AB99AA45DB5D44F3 /* NSObject+ModelAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ModelAdditions.h"; sourceTree = "<group>"; };
+		AF3EAB87E099D505FF0B4FE0 /* JPVimeoEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVimeoEngine.h; sourceTree = "<group>"; };
+		AF3EAFF6C1E06E052A3136F8 /* NSObject+SafeConcurrency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SafeConcurrency.m"; sourceTree = "<group>"; };
 		CDF02EF696D340C5B1690DE6 /* Pods-test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.xcconfig"; path = "Pods/Pods-test.xcconfig"; sourceTree = "<group>"; };
 		FB3A6F437473438F876D9C19 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -119,11 +148,11 @@
 		1F1ECD67184111280056CE5C /* VideoGaze */ = {
 			isa = PBXGroup;
 			children = (
+				AF3EA3D068B32FC9660E243C /* Classes */,
 				1F1ECD70184111280056CE5C /* JPAppDelegate.h */,
 				1F1ECD71184111280056CE5C /* JPAppDelegate.m */,
 				1F1ECD73184111280056CE5C /* Images.xcassets */,
 				1F1ECD68184111280056CE5C /* Supporting Files */,
-				AF3EA3D068B32FC9660E243C /* Classes */,
 				AF3EA5AD9F382D868C385A5B /* Resources */,
 			);
 			path = VideoGaze;
@@ -161,6 +190,8 @@
 		AF3EA05C51AF5E3A7D42CB5E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				1F979E181842728D00E8B4F8 /* JPAlbumTableViewController.h */,
+				1F979E191842728D00E8B4F8 /* JPAlbumTableViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -168,6 +199,8 @@
 		AF3EA098E7697E853457C210 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1F9432DF1843460600943DE3 /* JPVideoCell.h */,
+				1F9432E01843460600943DE3 /* JPVideoCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -175,22 +208,45 @@
 		AF3EA236249315967B125766 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AF3EA8947FE2355DA6E9E576 /* JPVimeoVideo.m */,
+				AF3EA5F1BC282FE5A1382575 /* JPVimeoVideo.h */,
+				AF3EA357FE64AE693A43432D /* Categories */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		AF3EA357FE64AE693A43432D /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				AF3EAB29AB99AA45DB5D44F3 /* NSObject+ModelAdditions.h */,
+				AF3EA6F38646CCCDDEE74B81 /* NSObject+ModelAdditions.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		AF3EA3D068B32FC9660E243C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				AF3EAA6374AF3F349CB807CC /* Network */,
 				AF3EA236249315967B125766 /* Model */,
 				AF3EAA5D4577504BDDA9CB7A /* Application */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		AF3EA3E0787EF097CD0A4BEB /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				AF3EA29663EB1B408794973B /* MKNetworkEngine+EngineAdditions.h */,
+				AF3EA7E9CF70917CDF8A40FA /* MKNetworkEngine+EngineAdditions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		AF3EA5AD9F382D868C385A5B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1F979E211842781300E8B4F8 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -198,6 +254,10 @@
 		AF3EA83B1BEE4A4A8D55D1F2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				AF3EA0F2A3813A93576B597D /* JPAppEnvironment.h */,
+				AF3EA9D7599C7117D1D5F55E /* JPAppEnvironment.m */,
+				AF3EA3D8BA25FEFE15757EB3 /* NSObject+SafeConcurrency.h */,
+				AF3EAFF6C1E06E052A3136F8 /* NSObject+SafeConcurrency.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -211,6 +271,16 @@
 				AF3EA05C51AF5E3A7D42CB5E /* ViewControllers */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		AF3EAA6374AF3F349CB807CC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AF3EA9015400FA7411B28835 /* JPVimeoEngine.m */,
+				AF3EAB87E099D505FF0B4FE0 /* JPVimeoEngine.h */,
+				AF3EA3E0787EF097CD0A4BEB /* Categories */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		AF3EAFE8416014797D5C510B /* Logic */ = {
@@ -270,7 +340,7 @@
 			attributes = {
 				CLASSPREFIX = JP;
 				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = "Joerg Polakowski";
+				ORGANIZATIONNAME = "Jörg Polakowski";
 				TargetAttributes = {
 					1F1ECD78184111280056CE5C = {
 						TestTargetID = 1F1ECD5D184111280056CE5C /* VideoGaze */;
@@ -283,6 +353,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				de,
 			);
 			mainGroup = 1F1ECD55184111280056CE5C;
 			productRefGroup = 1F1ECD5F184111280056CE5C /* Products */;
@@ -301,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F1ECD6C184111280056CE5C /* InfoPlist.strings in Resources */,
+				1F979E1F1842781300E8B4F8 /* Localizable.strings in Resources */,
 				1F1ECD74184111280056CE5C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +457,14 @@
 			files = (
 				1F1ECD72184111280056CE5C /* JPAppDelegate.m in Sources */,
 				1F1ECD6E184111280056CE5C /* main.m in Sources */,
+				AF3EA2407DD03E0F3B4335F9 /* JPVimeoEngine.m in Sources */,
+				1F979E1A1842728D00E8B4F8 /* JPAlbumTableViewController.m in Sources */,
+				AF3EA764F9B364EA4E9CBE90 /* MKNetworkEngine+EngineAdditions.m in Sources */,
+				AF3EAAE8B4810A663F950D08 /* JPAppEnvironment.m in Sources */,
+				AF3EA2FE3F5D2783DB79BB25 /* NSObject+SafeConcurrency.m in Sources */,
+				1F9432E11843460600943DE3 /* JPVideoCell.m in Sources */,
+				AF3EA2D9F0EC84C5EC0AAD30 /* JPVimeoVideo.m in Sources */,
+				AF3EA9273CE83025ACF95F64 /* NSObject+ModelAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +491,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				1F1ECD6B184111280056CE5C /* en */,
+				1F979E1B1842773000E8B4F8 /* de */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -419,8 +500,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				1F1ECD84184111280056CE5C /* en */,
+				1F979E1C1842773000E8B4F8 /* de */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1F979E211842781300E8B4F8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F979E201842781300E8B4F8 /* en */,
+				1F979E221842781E00E8B4F8 /* de */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -508,6 +599,7 @@
 				GCC_PREFIX_HEADER = "VideoGaze/VideoGaze-Prefix.pch";
 				INFOPLIST_FILE = "VideoGaze/VideoGaze-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -522,6 +614,7 @@
 				GCC_PREFIX_HEADER = "VideoGaze/VideoGaze-Prefix.pch";
 				INFOPLIST_FILE = "VideoGaze/VideoGaze-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
