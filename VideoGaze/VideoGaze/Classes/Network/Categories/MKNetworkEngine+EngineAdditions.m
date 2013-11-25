@@ -26,16 +26,6 @@
                   fail:(MKNKResponseBlock)fail
                  error:(MKNKErrorBlock)error {
 
-    // Header fields
-//    if ([JPAppEnvironment isUserLoggedIn]) {
-//        NSString *authorizationValue = [NSString stringWithFormat:@"Token token=%@", [JPAppEnvironment authenticationToken]];
-//        [op addHeaders:[NSDictionary dictionaryWithObject:authorizationValue forKey:@"Authorization"]];
-//    }
-//    [op addHeaders:[NSDictionary dictionaryWithObject:[JPAppEnvironment clientIdentifier] forKey:@"client_id"]];
-//    [op addHeaders:[NSDictionary dictionaryWithObject:[JPAppEnvironment clientSecret] forKey:@"client_secret"]];
-//    [op addHeaders:[NSDictionary dictionaryWithObject:[JPAppEnvironment clientBundleIdentifier] forKey:@"client_bundle_identifier"]];
-//    [op addHeaders:[NSDictionary dictionaryWithObject:[JPAppEnvironment clientVersion] forKey:@"client_version"]];
-
     [op addCompletionHandler:^(MKNetworkOperation *completedOperation) {
         if ([self isSuccessfulOperation:completedOperation] || [completedOperation isCachedResponse]) {
             if (success) {

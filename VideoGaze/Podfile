@@ -9,7 +9,6 @@ pod 'SSToolkit', '~> 1.0.4'
 pod 'ConventionalC', '~> 0.10'
 pod 'MKNetworkKit', '~> 0.87'
 pod 'MBProgressHUD', '~> 0.8'
-pod 'FastImageCache', '~> 1.2'
 
 target :test, :exclusive => true do
   link_with 'VideoGazeTests'

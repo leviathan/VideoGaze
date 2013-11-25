@@ -20,16 +20,18 @@
 		1F1ECD7D184111280056CE5C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1ECD65184111280056CE5C /* UIKit.framework */; };
 		1F1ECD85184111280056CE5C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F1ECD83184111280056CE5C /* InfoPlist.strings */; };
 		1F1ECD87184111280056CE5C /* VideoGazeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1ECD86184111280056CE5C /* VideoGazeTests.m */; };
-		1F9432E11843460600943DE3 /* JPVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9432E01843460600943DE3 /* JPVideoCell.m */; };
+		1F9432E11843460600943DE3 /* JPVideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F9432E01843460600943DE3 /* JPVideoTableViewCell.m */; };
 		1F979E1A1842728D00E8B4F8 /* JPAlbumTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F979E191842728D00E8B4F8 /* JPAlbumTableViewController.m */; };
 		1F979E1F1842781300E8B4F8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F979E211842781300E8B4F8 /* Localizable.strings */; };
 		3E890DFDC3424167A8452DEE /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3C3DE02BCE406B9E77533C /* libPods-test.a */; };
+		AF3EA0DCDAD601CBA080C57A /* JPAppDesign.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3EA21E3F0B9B207C9ED063 /* JPAppDesign.m */; };
 		AF3EA2407DD03E0F3B4335F9 /* JPVimeoEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3EA9015400FA7411B28835 /* JPVimeoEngine.m */; };
 		AF3EA2D9F0EC84C5EC0AAD30 /* JPVimeoVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3EA8947FE2355DA6E9E576 /* JPVimeoVideo.m */; };
 		AF3EA2FE3F5D2783DB79BB25 /* NSObject+SafeConcurrency.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3EAFF6C1E06E052A3136F8 /* NSObject+SafeConcurrency.m */; };
 		AF3EA764F9B364EA4E9CBE90 /* MKNetworkEngine+EngineAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3EA7E9CF70917CDF8A40FA /* MKNetworkEngine+EngineAdditions.m */; };
 		AF3EA9273CE83025ACF95F64 /* NSObject+ModelAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3EA6F38646CCCDDEE74B81 /* NSObject+ModelAdditions.m */; };
 		AF3EAAE8B4810A663F950D08 /* JPAppEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3EA9D7599C7117D1D5F55E /* JPAppEnvironment.m */; };
+		AF3EADE8290BFA990D86902A /* JPVimeoImageEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = AF3EA57FB0DF215B2BFE7ABD /* JPVimeoImageEngine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +61,8 @@
 		1F1ECD82184111280056CE5C /* VideoGazeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VideoGazeTests-Info.plist"; sourceTree = "<group>"; };
 		1F1ECD84184111280056CE5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F1ECD86184111280056CE5C /* VideoGazeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoGazeTests.m; sourceTree = "<group>"; };
-		1F9432DF1843460600943DE3 /* JPVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoCell.h; sourceTree = "<group>"; };
-		1F9432E01843460600943DE3 /* JPVideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoCell.m; sourceTree = "<group>"; };
+		1F9432DF1843460600943DE3 /* JPVideoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVideoTableViewCell.h; sourceTree = "<group>"; };
+		1F9432E01843460600943DE3 /* JPVideoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVideoTableViewCell.m; sourceTree = "<group>"; };
 		1F979E181842728D00E8B4F8 /* JPAlbumTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPAlbumTableViewController.h; sourceTree = "<group>"; };
 		1F979E191842728D00E8B4F8 /* JPAlbumTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPAlbumTableViewController.m; sourceTree = "<group>"; };
 		1F979E1B1842773000E8B4F8 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -70,16 +72,20 @@
 		3C3C3DE02BCE406B9E77533C /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10FB595BB8943B28023B4A4 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		AF3EA0F2A3813A93576B597D /* JPAppEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPAppEnvironment.h; sourceTree = "<group>"; };
+		AF3EA21E3F0B9B207C9ED063 /* JPAppDesign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPAppDesign.m; sourceTree = "<group>"; };
 		AF3EA29663EB1B408794973B /* MKNetworkEngine+EngineAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKNetworkEngine+EngineAdditions.h"; sourceTree = "<group>"; };
 		AF3EA3D8BA25FEFE15757EB3 /* NSObject+SafeConcurrency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SafeConcurrency.h"; sourceTree = "<group>"; };
+		AF3EA57FB0DF215B2BFE7ABD /* JPVimeoImageEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVimeoImageEngine.m; sourceTree = "<group>"; };
 		AF3EA5F1BC282FE5A1382575 /* JPVimeoVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVimeoVideo.h; sourceTree = "<group>"; };
 		AF3EA6F38646CCCDDEE74B81 /* NSObject+ModelAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ModelAdditions.m"; sourceTree = "<group>"; };
+		AF3EA7323CAEBC9E5EE92E83 /* JPAppDesign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPAppDesign.h; sourceTree = "<group>"; };
 		AF3EA7E9CF70917CDF8A40FA /* MKNetworkEngine+EngineAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKNetworkEngine+EngineAdditions.m"; sourceTree = "<group>"; };
 		AF3EA8947FE2355DA6E9E576 /* JPVimeoVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVimeoVideo.m; sourceTree = "<group>"; };
 		AF3EA9015400FA7411B28835 /* JPVimeoEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPVimeoEngine.m; sourceTree = "<group>"; };
 		AF3EA9D7599C7117D1D5F55E /* JPAppEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPAppEnvironment.m; sourceTree = "<group>"; };
 		AF3EAB29AB99AA45DB5D44F3 /* NSObject+ModelAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ModelAdditions.h"; sourceTree = "<group>"; };
 		AF3EAB87E099D505FF0B4FE0 /* JPVimeoEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVimeoEngine.h; sourceTree = "<group>"; };
+		AF3EAF0983BE4C2E5E14B134 /* JPVimeoImageEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPVimeoImageEngine.h; sourceTree = "<group>"; };
 		AF3EAFF6C1E06E052A3136F8 /* NSObject+SafeConcurrency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SafeConcurrency.m"; sourceTree = "<group>"; };
 		CDF02EF696D340C5B1690DE6 /* Pods-test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.xcconfig"; path = "Pods/Pods-test.xcconfig"; sourceTree = "<group>"; };
 		FB3A6F437473438F876D9C19 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -199,8 +205,8 @@
 		AF3EA098E7697E853457C210 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1F9432DF1843460600943DE3 /* JPVideoCell.h */,
-				1F9432E01843460600943DE3 /* JPVideoCell.m */,
+				1F9432DF1843460600943DE3 /* JPVideoTableViewCell.h */,
+				1F9432E01843460600943DE3 /* JPVideoTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -258,6 +264,8 @@
 				AF3EA9D7599C7117D1D5F55E /* JPAppEnvironment.m */,
 				AF3EA3D8BA25FEFE15757EB3 /* NSObject+SafeConcurrency.h */,
 				AF3EAFF6C1E06E052A3136F8 /* NSObject+SafeConcurrency.m */,
+				AF3EA7323CAEBC9E5EE92E83 /* JPAppDesign.h */,
+				AF3EA21E3F0B9B207C9ED063 /* JPAppDesign.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -265,7 +273,6 @@
 		AF3EAA5D4577504BDDA9CB7A /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				AF3EAFE8416014797D5C510B /* Logic */,
 				AF3EA098E7697E853457C210 /* Views */,
 				AF3EA83B1BEE4A4A8D55D1F2 /* Common */,
 				AF3EA05C51AF5E3A7D42CB5E /* ViewControllers */,
@@ -279,15 +286,10 @@
 				AF3EA9015400FA7411B28835 /* JPVimeoEngine.m */,
 				AF3EAB87E099D505FF0B4FE0 /* JPVimeoEngine.h */,
 				AF3EA3E0787EF097CD0A4BEB /* Categories */,
+				AF3EA57FB0DF215B2BFE7ABD /* JPVimeoImageEngine.m */,
+				AF3EAF0983BE4C2E5E14B134 /* JPVimeoImageEngine.h */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		AF3EAFE8416014797D5C510B /* Logic */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Logic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -462,9 +464,11 @@
 				AF3EA764F9B364EA4E9CBE90 /* MKNetworkEngine+EngineAdditions.m in Sources */,
 				AF3EAAE8B4810A663F950D08 /* JPAppEnvironment.m in Sources */,
 				AF3EA2FE3F5D2783DB79BB25 /* NSObject+SafeConcurrency.m in Sources */,
-				1F9432E11843460600943DE3 /* JPVideoCell.m in Sources */,
+				1F9432E11843460600943DE3 /* JPVideoTableViewCell.m in Sources */,
 				AF3EA2D9F0EC84C5EC0AAD30 /* JPVimeoVideo.m in Sources */,
 				AF3EA9273CE83025ACF95F64 /* NSObject+ModelAdditions.m in Sources */,
+				AF3EADE8290BFA990D86902A /* JPVimeoImageEngine.m in Sources */,
+				AF3EA0DCDAD601CBA080C57A /* JPAppDesign.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

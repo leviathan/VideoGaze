@@ -6,4 +6,5 @@
   Copyright (c) 2013 Jörg Polakowski. All rights reserved.
 */
 
-"JPAlbumTableViewController.loadAlbumList.waitText" = "Loading List of Albums";
+"JPAlbumTableViewController.title" = "Video Gaze";
+"JPAlbumTableViewController.noVideosAvailableYet" = "No videos available yet";

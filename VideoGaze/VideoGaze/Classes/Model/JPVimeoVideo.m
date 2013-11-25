@@ -11,16 +11,28 @@
 + (JPVimeoVideo *)videoFromDictionary:(NSDictionary *)dict {
     JPVimeoVideo *video = [[JPVimeoVideo alloc] init];
 
-    // todo parse the dict values
-
     video.videoId = [self numberForKey:@"id" fromDictionary:dict];
     video.videoTitle = [self stringForKey:@"title" fromDictionary:dict];
     video.videoDescription = [self stringForKey:@"description" fromDictionary:dict];
-//    video.videoUploadDate = [self ] todo data parsing "upload_date"  -- 2007-09-21 20:36:30
     video.videoDuration = [self numberForKey:@"duration" fromDictionary:dict];
 
+    // date
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    formatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
+    video.videoUploadDate = [formatter dateFromString:[self stringForKey:@"upload_date" fromDictionary:dict]];
+
+    // video thumbnails
     NSString *thumbnailLarge = [self stringForKey:@"thumbnail_large" fromDictionary:dict];
     video.thumbnailLargeURL = [NSURL URLWithString:thumbnailLarge];
+
+    NSString *thumbnailMedium = [self stringForKey:@"thumbnail_medium" fromDictionary:dict];
+    video.thumbnailMediumURL = [NSURL URLWithString:thumbnailMedium];
+
+    NSString *thumbnailSmall = [self stringForKey:@"thumbnail_small" fromDictionary:dict];
+    video.thumbnailSmallURL = [NSURL URLWithString:thumbnailSmall];
+
+    // user values
+    // ...
 
     return video;
 }
