@@ -13,8 +13,6 @@
 
 @interface JPVideoTableViewCell : UITableViewCell
 
-@property(nonatomic, strong) MKNetworkOperation *imageLoadingOperation;
-
 /**
 * Returns the unique reuse identifier for this table cell.
 */

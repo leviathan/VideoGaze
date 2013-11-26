@@ -16,6 +16,10 @@
 //***************************************************************************************
 @interface JPVideoTableViewCell ()
 
+@property(nonatomic, strong) NSString *loadingImageURLString;
+
+@property(nonatomic, strong) MKNetworkOperation *imageLoadingOperation;
+
 @property(strong) UIImageView *videoImageView;
 
 @property(strong) UILabel *videoTitleLabel;
@@ -59,7 +63,9 @@
     self.selectionStyle = UITableViewCellSelectionStyleNone;
     // image
     self.videoImageView.image = nil;
-    [self.imageLoadingOperation cancel];
+    if (self.imageLoadingOperation) {
+        [self.imageLoadingOperation cancel];
+    }
     // title
     self.videoTitleLabel.text = @"";
 }
@@ -78,14 +84,20 @@
 }
 
 - (void)updateCellWith:(JPVimeoVideo *)video {
+    // remember the video URL to enable checking the URL later on when the real image is retrieved.
+    self.loadingImageURLString = [video.thumbnailLargeURL absoluteString];
+
     // update title
     self.videoTitleLabel.text = video.videoTitle;
 
     // update image
+    self.videoImageView.image = nil;
     __weak typeof (self.videoImageView) proxyVideoImageView = self.videoImageView;
     JPVimeoImageEngine *engine = [[JPVimeoImageEngine alloc] init];
-    [engine imageAtURL:video.thumbnailLargeURL completionHandler:^(UIImage *fetchedImage, NSURL *url, BOOL isInCache) {
-        proxyVideoImageView.image = fetchedImage;
+    self.imageLoadingOperation = [engine imageAtURL:video.thumbnailLargeURL completionHandler:^(UIImage *fetchedImage, NSURL *url, BOOL isInCache) {
+        if ([self.loadingImageURLString isEqualToString:[url absoluteString]]) {
+            proxyVideoImageView.image = fetchedImage;
+        }
     } errorHandler:^(MKNetworkOperation *completedOperation, NSError *error) {
         DLog(@"Image Retrieve Error: %@", [error localizedDescription]);
     }];
