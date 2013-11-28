@@ -9,6 +9,7 @@ pod 'SSToolkit', '~> 1.0.4'
 pod 'ConventionalC', '~> 0.10'
 pod 'MKNetworkKit', '~> 0.87'
 pod 'MBProgressHUD', '~> 0.8'
+pod 'MWFeedParser', '~> 0.0.1'
 
 target :test, :exclusive => true do
   link_with 'VideoGazeTests'

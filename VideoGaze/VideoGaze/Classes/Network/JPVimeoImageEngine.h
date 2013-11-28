@@ -10,4 +10,12 @@
 
 @interface JPVimeoImageEngine : MKNetworkEngine
 
+/**
+* Returns a newly created engine with the provided cache-name
+*
+* @params cacheName - The name of the cache directory that will be used by the engine.
+* When nil, a default name will be used.
+*/
+- (id)initWith:(NSString *)cacheName;
+
 @end

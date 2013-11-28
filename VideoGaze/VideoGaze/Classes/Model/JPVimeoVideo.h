@@ -38,11 +38,11 @@
 /** URL to the small user portrait (30px) */
 @property(strong) NSURL *userPortraitSmallURL;
 
-/** URL to the medium user portrait (100px) */
+/** URL to the medium user portrait (75px) */
 @property(strong) NSURL *userPortraitMediumURL;
 
-/** URL to the large user portrait (300px) */
-@property(strong) NSURL *userPortraitLargeURL;
+/** URL to the huge user portrait (300px) */
+@property(strong) NSURL *userPortraitHugeURL;
 
 
 // Factory

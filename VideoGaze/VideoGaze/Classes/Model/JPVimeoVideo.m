@@ -32,7 +32,10 @@
     video.thumbnailSmallURL = [NSURL URLWithString:thumbnailSmall];
 
     // user values
-    // ...
+    NSString *userPortraitHuge = [self stringForKey:@"user_portrait_huge" fromDictionary:dict];
+    video.userPortraitHugeURL = [NSURL URLWithString:userPortraitHuge];
+
+    video.userName = [self stringForKey:@"user_name" fromDictionary:dict];
 
     return video;
 }
