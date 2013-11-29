@@ -182,7 +182,7 @@
 
     // update video upload date
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    formatter.dateFormat = @"mm.dd.yyyy";
+    formatter.dateFormat = @"MM.dd.yyyy";
     self.videoUploadDateLabel.text = [formatter stringFromDate:video.videoUploadDate];
 
     self.videoImageView.image = nil;
