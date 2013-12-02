@@ -42,6 +42,11 @@
 
 @property(strong) UILabel *videoUploadDateLabel;
 
+/**
+* Returns the cached instance of the video upload date formatter.
+*/
+- (NSDateFormatter *)videoUploadDateFormatter;
+
 @end
 
 
@@ -181,9 +186,7 @@
     self.videoDescriptionLabel.text = [video.videoDescription stringByConvertingHTMLToPlainText];
 
     // update video upload date
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    formatter.dateFormat = @"MM.dd.yyyy";
-    self.videoUploadDateLabel.text = [formatter stringFromDate:video.videoUploadDate];
+    self.videoUploadDateLabel.text = [[self videoUploadDateFormatter] stringFromDate:video.videoUploadDate];
 
     self.videoImageView.image = nil;
     self.userImageView.image = nil;
@@ -234,7 +237,6 @@
     };
 
     // update video image
-    __weak typeof (self.videoImageView) proxyVideoImageView = self.videoImageView;
     self.videoImageLoadingOperation = [self.videoImageEngine imageAtURL:video.thumbnailLargeURL completionHandler:^(UIImage *fetchedImage, NSURL *url, BOOL isInCache) {
         if ([self.loadingVideoImageURLString isEqualToString:[url absoluteString]]) {
             updateVideoImageBlock(fetchedImage, url, isInCache);
@@ -244,7 +246,6 @@
     }];
 
     // update user image
-    __weak typeof (self.userImageView) proxyUserImageView = self.userImageView;
     self.userImageLoadingOperation = [self.userImageEngine imageAtURL:video.userPortraitHugeURL completionHandler:^(UIImage *fetchedImage, NSURL *url, BOOL isInCache) {
         if ([self.loadingUserImageURLString isEqualToString:[url absoluteString]]) {
             updateUserImageBlock(fetchedImage, url, isInCache);
@@ -265,6 +266,18 @@
     });
 
     return __reuseIdentifier;
+}
+
+#pragma mark private methods
+
+- (NSDateFormatter *)videoUploadDateFormatter {
+    static NSDateFormatter *_videoUploadDateFormatter = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _videoUploadDateFormatter = [[NSDateFormatter alloc] init];
+        _videoUploadDateFormatter.dateFormat = @"MM.dd.yyyy";
+    });
+    return _videoUploadDateFormatter;
 }
 
 @end
